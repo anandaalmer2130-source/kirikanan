@@ -1,26 +1,106 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Pertama Saya</title>
+    <title>Portofolio Saya</title>
     <style>
+        /* Reset & Base Style */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Card Container */
+        .card {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            max-width: 450px;
+            width: 100%;
             text-align: center;
-            padding: 50px;
-            background-color: #f4f4f9;
+            border: 1px solid #334155;
         }
+
+        /* Profile Avatar */
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6366f1, #a855f7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px auto;
+            font-size: 36px;
+            font-weight: bold;
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+        }
+
+        /* Typography */
         h1 {
-            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            color: #ffffff;
         }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            margin-bottom: 16px;
+        }
+
         p {
-            color: #666;
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            margin-bottom: 24px;
+        }
+
+        /* Call to Action Button */
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #6366f1, #4f46e5);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
         }
     </style>
 </head>
 <body>
-    <h1>Helo, Dunia!</h1>
-    <p>Ini adalah website pertama saya yang di-host secara gratis di GitHub Pages.</p>
+
+    <div class="card">
+        <div class="avatar">🚀</div>
+        <h1>Selamat Datang!</h1>
+        <div class="subtitle">Web Designer & Creator</div>
+        <p>Ini adalah tampilan website baru saya yang didesain secara modern dan responsif menggunakan GitHub Pages.</p>
+        <a href="#" class="btn">Jelajahi Projek</a>
+    </div>
+
 </body>
 </html>

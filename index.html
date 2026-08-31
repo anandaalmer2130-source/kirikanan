@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
+    <!-- 📌 Tanda 1: Judul Tab Browser -->
+    <title>Portofolio <<< Ananda Almer W  >>></title>
     <style>
-        /* Reset & Base Style */
         * {
             margin: 0;
             padding: 0;
@@ -24,82 +24,176 @@
             padding: 20px;
         }
 
-        /* Card Container */
         .card {
             background: #1e293b;
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            max-width: 450px;
+            padding: 35px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            max-width: 480px;
             width: 100%;
-            text-align: center;
             border: 1px solid #334155;
         }
 
-        /* Profile Avatar */
+        .profile-header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
         .avatar {
-            width: 100px;
-            height: 100px;
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
             background: linear-gradient(135deg, #6366f1, #a855f7);
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 20px auto;
-            font-size: 36px;
-            font-weight: bold;
-            color: #ffffff;
+            margin: 0 auto 16px auto;
+            font-size: 32px;
             box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
         }
 
-        /* Typography */
         h1 {
-            font-size: 1.5rem;
-            margin-bottom: 8px;
+            font-size: 1.6rem;
             color: #ffffff;
+            margin-bottom: 4px;
         }
 
-        .subtitle {
+        .tagline {
             font-size: 0.9rem;
-            color: #94a3b8;
-            margin-bottom: 16px;
+            color: #818cf8;
+            font-weight: 600;
         }
 
-        p {
-            font-size: 0.95rem;
+        .bio {
+            font-size: 0.9rem;
             color: #cbd5e1;
+            text-align: center;
+            margin: 16px 0 24px 0;
+        }
+
+        .section-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #94a3b8;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
             margin-bottom: 24px;
         }
 
-        /* Call to Action Button */
-        .btn {
-            display: inline-block;
-            width: 100%;
-            padding: 12px 24px;
+        .skill-tag {
+            background: #334155;
+            color: #e2e8f0;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .portfolio-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 18px;
+            background: #0f172a;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border: 1px solid #334155;
+            transition: all 0.3s ease;
+        }
+
+        .btn-link:hover {
+            border-color: #6366f1;
+            background: #1e1b4b;
+            transform: translateY(-2px);
+        }
+
+        .btn-contact {
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+            padding: 12px;
             background: linear-gradient(135deg, #6366f1, #4f46e5);
             color: #ffffff;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 10px;
             font-weight: 600;
             font-size: 0.95rem;
             transition: all 0.3s ease;
         }
 
-        .btn:hover {
+        .btn-contact:hover {
             opacity: 0.9;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
         }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <div class="avatar">🚀</div>
-        <h1>Selamat Datang!</h1>
-        <div class="subtitle">Web Designer & Creator</div>
-        <p>Ini adalah tampilan website baru saya yang didesain secara modern dan responsif menggunakan GitHub Pages.</p>
-        <a href="#" class="btn">Jelajahi Projek</a>
+        <!-- Header Profil -->
+        <div class="profile-header">
+            <div class="avatar">🎨</div>
+            
+            <!-- 📌 Tanda 2: Nama Lengkap / Panggilan -->
+            <h1><<< GANTI NAMA KAMU >>></h1>
+            
+            <!-- 📌 Tanda 3: Profesi / Role -->
+            <div class="tagline"><<< Content Editor & Graphic Designer >>></div>
+        </div>
+
+        <!-- 📌 Tanda 4: Deskripsi Singkat Diri -->
+        <p class="bio">
+            <<< Mahasiswa Komunikasi yang berfokus pada visual branding, desain feed Instagram Gen-Z, dan video editing kreatif. >>>
+        </p>
+
+        <!-- Keahlian -->
+        <div class="section-title">Keahlian & Tools</div>
+        <div class="skills">
+            <!-- 📌 Tanda 5: Tag Keahlian (Bisa Tambah/Hapus) -->
+            <span class="skill-tag"><<<  Graphic Design >>></span>
+            <span class="skill-tag"><<<  Video Editing >>></span>
+            <span class="skill-tag"><<< Copywriting >>></span>
+            <span class="skill-tag"><<< Instagram Feed >>></span>
+            <span class="skill-tag"><<< Canva / Figma >>></span>
+        </div>
+
+        <!-- Tautan Portofolio / Hasil Karya -->
+        <div class="section-title">Portofolio & Karya</div>
+        <div class="portfolio-links">
+            
+            <!-- 📌 Tanda 6: Link Karya Pertama -->
+            <!-- Masukkan URL (Google Drive/Behance/Instagram) di href="" -->
+            <a href="<<< https://drive.google.com/drive/folders/1dsxViC81cn5nPxC09fVOoROBs2T2Q53K?usp=drive_link >>>" class="btn-link" target="_blank">
+                <span>📁 <<<  Desain Social Media Feed >>></span>
+                <span>➔</span>
+            </a>
+            
+            <!-- 📌 Tanda 7: Link Karya Kedua -->
+            <a href="<<< https://drive.google.com/drive/folders/1A84zQ6IMrWgerEDemY2UAdC02I6E6_kd?usp=drive_link>>>" class="btn-link" target="_blank">
+                <span>🎬 <<<  Hasil Edit Video & Reels >>></span>
+                <span>➔</span>
+            </a>
+            
+        </div>
+
+        <!-- 📌 Tanda 8: Alamat Email untuk Kontak -->
+        <!-- Ganti emailkamu@gmail.com tetapi biarkan tulisan 'mailto:' di depannya -->
+        <a href="mailto:<<< GANTI_EMAIL_KAMU@gmail.com >>>" class="btn-contact">Hubungi Saya</a>
     </div>
 
 </body>

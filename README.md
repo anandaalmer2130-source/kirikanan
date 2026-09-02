@@ -1,2 +1,0 @@
-# kirikanan
-projek pertama saya 

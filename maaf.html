@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khusus Untuk Viona ❤️</title>
+    <title>Untuk Kamu ❤️</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,17 +24,12 @@
             text-align: center;
             max-width: 400px;
             width: 100%;
-            position: relative;
         }
-        h1 { color: #e63946; font-size: 24px; margin-bottom: 10px; }
-        .nama { color: #ff4d6d; text-decoration: underline; font-weight: bold; }
+        h1 { color: #e63946; font-size: 24px; }
         p { line-height: 1.6; color: #555; }
         .btn-container {
             margin-top: 25px;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            min-height: 50px;
+            position: relative;
         }
         button {
             padding: 12px 25px;
@@ -47,8 +42,6 @@
         }
         .btn-ya { background-color: #ff4d6d; color: white; }
         .btn-ya:hover { transform: scale(1.05); }
-        .btn-ga { background-color: #cccccc; color: #666666; position: absolute; }
-        
         #pesan-rahasia {
             display: none;
             margin-top: 20px;
@@ -62,18 +55,17 @@
 <body>
 
     <div class="card">
-        <h1>Maafin Aku Ya, <span class="nama">Viona</span>? 🥺</h1>
-        <p>Aku tahu aku salah dan udah bikin <span class="nama">Viona</span> kesal. Aku beneran menyesal dan nggak mau kamu sedih terus.</p>
+        <h1>Maafin Aku Ya? 🥺</h1>
+        <p>Aku tahu aku salah dan udah bikin kamu kesal. Aku beneran menyesal dan nggak mau kamu sedih terus.</p>
         <p><strong>Masih mau maafin aku, kan?</strong></p>
 
         <div class="btn-container">
             <button class="btn-ya" onclick="maafDiterima()">Mau Maafin ❤️</button>
-            <button class="btn-ga" id="btnGa" onmouseover="kabur()" onclick="kabur()">Nggak Mau 😜</button>
         </div>
 
         <div id="pesan-rahasia">
             <h3>Makasih BANYAK Sayang! 🥰</h3>
-            <p>Janji deh habis ini aku bakal lebih peka lagi. Nanti kita jalan dan makan bareng ya, <span class="nama">Viona</span>!</p>
+            <p>Janji deh habis ini aku bakal lebih peka lagi. Nanti malam kita makan makanan favorit kamu ya!</p>
         </div>
     </div>
 
@@ -81,17 +73,6 @@
         function maafDiterima() {
             document.getElementById('pesan-rahasia').style.display = 'block';
             document.querySelector('.btn-ya').style.display = 'none';
-            document.getElementById('btnGa').style.display = 'none';
-        }
-
-        function kabur() {
-            const btn = document.getElementById('btnGa');
-            const x = Math.random() * (window.innerWidth - btn.offsetWidth - 100);
-            const y = Math.random() * (window.innerHeight - btn.offsetHeight - 100);
-            
-            btn.style.position = 'fixed';
-            btn.style.left = x + 'px';
-            btn.style.top = y + 'px';
         }
     </script>
 </body>

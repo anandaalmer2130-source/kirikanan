@@ -3,198 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 📌 Tanda 1: Judul Tab Browser -->
-    <title>Portofolio <<< Ananda Almer W  >>></title>
+    <title>Untuk Kamu ❤️</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
         body {
-            background-color: #0f172a;
-            color: #f8fafc;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffe6e8;
+            color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            margin: 0;
             padding: 20px;
         }
-
         .card {
-            background: #1e293b;
-            padding: 35px 30px;
+            background: white;
+            padding: 30px;
             border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-            max-width: 480px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
             width: 100%;
-            border: 1px solid #334155;
         }
-
-        .profile-header {
-            text-align: center;
-            margin-bottom: 24px;
+        h1 { color: #e63946; font-size: 24px; }
+        p { line-height: 1.6; color: #555; }
+        .btn-container {
+            margin-top: 25px;
+            position: relative;
         }
-
-        .avatar {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #6366f1, #a855f7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 16px auto;
-            font-size: 32px;
-            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.2s;
         }
-
-        h1 {
-            font-size: 1.6rem;
-            color: #ffffff;
-            margin-bottom: 4px;
-        }
-
-        .tagline {
-            font-size: 0.9rem;
-            color: #818cf8;
-            font-weight: 600;
-        }
-
-        .bio {
-            font-size: 0.9rem;
-            color: #cbd5e1;
-            text-align: center;
-            margin: 16px 0 24px 0;
-        }
-
-        .section-title {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #94a3b8;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 24px;
-        }
-
-        .skill-tag {
-            background: #334155;
-            color: #e2e8f0;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-
-        .portfolio-links {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .btn-link {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 12px 18px;
-            background: #0f172a;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 10px;
-            font-weight: 500;
-            font-size: 0.9rem;
-            border: 1px solid #334155;
-            transition: all 0.3s ease;
-        }
-
-        .btn-link:hover {
-            border-color: #6366f1;
-            background: #1e1b4b;
-            transform: translateY(-2px);
-        }
-
-        .btn-contact {
+        .btn-ya { background-color: #ff4d6d; color: white; }
+        .btn-ya:hover { transform: scale(1.05); }
+        #pesan-rahasia {
+            display: none;
             margin-top: 20px;
-            display: block;
-            text-align: center;
-            padding: 12px;
-            background: linear-gradient(135deg, #6366f1, #4f46e5);
-            color: #ffffff;
-            text-decoration: none;
+            padding: 15px;
+            background: #fff0f3;
             border-radius: 10px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-        }
-
-        .btn-contact:hover {
-            opacity: 0.9;
+            border: 1px dashed #ff4d6d;
         }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <!-- Header Profil -->
-        <div class="profile-header">
-            <div class="avatar">🎨</div>
-            
-            <!-- 📌 Tanda 2: Nama Lengkap / Panggilan -->
-            <h1><<< GANTI NAMA KAMU >>></h1>
-            
-            <!-- 📌 Tanda 3: Profesi / Role -->
-            <div class="tagline"><<< Content Editor & Graphic Designer >>></div>
+        <h1>Maafin Aku Ya? 🥺</h1>
+        <p>Aku tahu aku salah dan udah bikin kamu kesal. Aku beneran menyesal dan nggak mau kamu sedih terus.</p>
+        <p><strong>Masih mau maafin aku, kan?</strong></p>
+
+        <div class="btn-container">
+            <button class="btn-ya" onclick="maafDiterima()">Mau Maafin ❤️</button>
         </div>
 
-        <!-- 📌 Tanda 4: Deskripsi Singkat Diri -->
-        <p class="bio">
-            <<< Mahasiswa Komunikasi yang berfokus pada visual branding, desain feed Instagram Gen-Z, dan video editing kreatif. >>>
-        </p>
-
-        <!-- Keahlian -->
-        <div class="section-title">Keahlian & Tools</div>
-        <div class="skills">
-            <!-- 📌 Tanda 5: Tag Keahlian (Bisa Tambah/Hapus) -->
-            <span class="skill-tag"><<<  Graphic Design >>></span>
-            <span class="skill-tag"><<<  Video Editing >>></span>
-            <span class="skill-tag"><<< Copywriting >>></span>
-            <span class="skill-tag"><<< Instagram Feed >>></span>
-            <span class="skill-tag"><<< Canva / Figma >>></span>
+        <div id="pesan-rahasia">
+            <h3>Makasih BANYAK Sayang! 🥰</h3>
+            <p>Janji deh habis ini aku bakal lebih peka lagi. Nanti malam kita makan makanan favorit kamu ya!</p>
         </div>
-
-        <!-- Tautan Portofolio / Hasil Karya -->
-        <div class="section-title">Portofolio & Karya</div>
-        <div class="portfolio-links">
-            
-            <!-- 📌 Tanda 6: Link Karya Pertama -->
-            <!-- Masukkan URL (Google Drive/Behance/Instagram) di href="" -->
-            <a href="<<< https://drive.google.com/drive/folders/1dsxViC81cn5nPxC09fVOoROBs2T2Q53K?usp=drive_link >>>" class="btn-link" target="_blank">
-                <span>📁 <<<  Desain Social Media Feed >>></span>
-                <span>➔</span>
-            </a>
-            
-            <!-- 📌 Tanda 7: Link Karya Kedua -->
-            <a href="<<< https://drive.google.com/drive/folders/1A84zQ6IMrWgerEDemY2UAdC02I6E6_kd?usp=drive_link>>>" class="btn-link" target="_blank">
-                <span>🎬 <<<  Hasil Edit Video & Reels >>></span>
-                <span>➔</span>
-            </a>
-            
-        </div>
-
-        <!-- 📌 Tanda 8: Alamat Email untuk Kontak -->
-        <!-- Ganti emailkamu@gmail.com tetapi biarkan tulisan 'mailto:' di depannya -->
-        <a href="mailto:<<< GANTI_EMAIL_KAMU@gmail.com >>>" class="btn-contact">Hubungi Saya</a>
     </div>
 
+    <script>
+        function maafDiterima() {
+            document.getElementById('pesan-rahasia').style.display = 'block';
+            document.querySelector('.btn-ya').style.display = 'none';
+        }
+    </script>
 </body>
 </html>

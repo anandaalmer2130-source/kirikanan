@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYSTEM_DIAGNOSTIC_VIONA.exe</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body {
+            background-color: #0d1117;
+            color: #58a6ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 15px;
+        }
+        .terminal {
+            background-color: #161b22;
+            border: 2px solid #30363d;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 550px;
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.1);
+            overflow: hidden;
+        }
+        .terminal-header {
+            background-color: #21262d;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 1px solid #30363d;
+        }
+        .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+        .red { background-color: #ff5f56; }
+        .yellow { background-color: #ffbd2e; }
+        .green { background-color: #27c93f; }
+        .title { color: #8b949e; font-size: 13px; margin-left: 10px; }
+        .terminal-body {
+            padding: 20px;
+            color: #c9d1d9;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .highlight { color: #ff7b72; font-weight: bold; }
+        .success { color: #7ee787; font-weight: bold; }
+        .progress-bar {
+            width: 100%;
+            background-color: #30363d;
+            border-radius: 8px;
+            height: 20px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #ff7b72, #7ee787);
+            transition: width 0.3s ease;
+        }
+        .btn-action {
+            background-color: #238636;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: inherit;
+            margin-top: 10px;
+            transition: 0.2s;
+        }
+        .btn-action:hover { background-color: #2ea043; transform: scale(1.02); }
+        #final-message {
+            display: none;
+            background-color: #1f242c;
+            border-left: 4px solid #7ee787;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="terminal">
+    <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="title">viona_heart_status.sh</span>
+    </div>
+    <div class="terminal-body">
+        <p>[SYSTEM ALERT]: Status Hubungan Terdeteksi <span class="highlight">CRITICAL ERROR</span>.</p>
+        <p>Penyebab: Bikin <span class="highlight">Viona</span> kesal/ngambek.</p>
+        <hr style="border-color: #30363d; margin: 15px 0;">
+        
+        <p>Tekan tombol di bawah untuk menyuntikkan <span class="success">Dosis Maaf</span> ke sistem:</p>
+        
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress"></div>
+        </div>
+        <p>Tingkat Maaf Viona: <span id="percent-text" class="success">0%</span></p>
+
+        <button class="btn-action" onclick="tambahMaaf()">Beri Maaf (+25%)</button>
+
+        <div id="final-message">
+            <p class="success">✔ SYSTEM REPAIRED SUCCESSFULLY!</p>
+            <p>Terima kasih ya, <b>Viona</b> udah mau maafin aku! ❤️</p>
+            <p>Janji deh habis ini bakal lebih peka dan gak bikin kamu kesel lagi. Nanti malam kita jajan makanan favorit kamu ya!</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    let level = 0;
+    function tambahMaaf() {
+        if (level < 100) {
+            level += 25;
+            document.getElementById('progress').style.width = level + '%';
+            document.getElementById('percent-text').innerText = level + '%';
+            
+            if (level === 100) {
+                document.getElementById('final-message').style.display = 'block';
+                document.querySelector('.btn-action').style.display = 'none';
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
